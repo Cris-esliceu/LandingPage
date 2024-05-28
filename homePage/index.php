@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Web </title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1 class="titulo">Cristina Rengifo <span>Informatica</span></h1>
-    </header>
-    <div class="bg-secundario">
-        <nav class="navegacion-principal contenedor">
-            <a href="índex.html">Home</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </div>
+<?php
+    include 'db.php' ;
+    include 'header.php';
+?>
     <section class="hero">
     <div class="contenido-hero">
             <h2>Formación online</h2>
@@ -34,10 +15,10 @@
             </svg>
                 <p>Aprende a tu ritmo</p>
             </div>
-            <a class="boton" href="tutorial.html">Tutorials</a>
+            <a class="boton" href="tutorial.php">Tutorials</a>
     </div>
     </section>
-    <main class="contenedor sombra">
+<main class="contenedor sombra">
         <h2>Mi contenido </h2>
         <div class="micontenido">
 
@@ -90,39 +71,8 @@
             </section>
 
         </div><!--.micontenido-->
-        <section>
-            <h2>Contacto</h2>
-            <form class="formulario" action="">
-                <div>
-                    <legend>Contactame enviando tus datos </legend>
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                                <label for=""> Nombre: </label>
-                                <input class="input-text" type="text" name="nombre" placeholder="Tu nombre">
-                        </div>
-                        <div class="campo">
-                                <label for="">Telefono</label>
-                                <input class="input-text" type="tel" name="telefono" placeholder="Tu telefono">
-                        </div>
-                        <div class="campo">
-                                <label for=""> Correo</label>
-                                <input class="input-text" type="email" name="Correo" placeholder="Tu Correo">
-                        </div>
-                        <div class="campo">
-                                <label for="">Mensaje</label>
-                                <textarea class="input-text" name="mensaje" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <input class="boton" type="submit" value="Enviar">
-                    </div>
-                </div><!--contenedor-campos-->
-                </fieldset>
-                
-            </form>
-        </section>
+        
     </main>
-    <footer>
-        <p>Todos los Derechos reservados</p>
-    </footer>
-</body>
-</html>
+    <?php
+    include 'footer.php';
+?>
