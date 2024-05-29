@@ -18,7 +18,7 @@
                         </div>
                         <div class="campo">
                                 <label for=""> Correo</label>
-                                <input class="input-text" type="email" name="Correo" placeholder="Tu Correo">
+                                <input class="input-text" type="email" name="correo" placeholder="Tu Correo">
                         </div>
                         <div class="campo">
                                 <label for="">Mensaje</label>
