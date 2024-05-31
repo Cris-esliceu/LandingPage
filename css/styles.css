@@ -51,7 +51,6 @@ fieldset{
 /*utilidades*/
 
 .contenedor{
-
     width: 75%;
     margin: 0 auto;
 }
@@ -234,3 +233,24 @@ fieldset{
 footer{
     text-align: center;
 }
+
+/*MENSAJES FORMULARIO*/
+.success{
+    background-color: green;
+    color: white;
+}
+
+.error{
+    background-color: red;
+    color: white;
+}
+.mensaje{ 
+    width: 50%;
+    text-align: center;
+    border-radius: 1rem;
+    border: .3rem solid white;
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
