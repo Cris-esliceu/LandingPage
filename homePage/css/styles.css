@@ -1,5 +1,5 @@
 :root{
-    --primario: rgb(122, 129, 129);
+    --primario: rgb(108, 117, 117);
     --secundario:  rgb(51, 42, 59);
     --terciario: rgb(53, 99, 99);
     --cuartario: rgb(255, 235, 205);
@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    font-family: "Lora", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: var(--tamaño-fuente); /*1rem=16px*/
     background-color: rgb(240, 238, 238);
     background-image: linear-gradient(to top,var(--secundario) 0% var(--terciario) 100%);
@@ -22,17 +22,21 @@ h1{
 }
 h2{
     font-size: 3.2rem;
-    color: rgb(131, 0, 0);
+    color: rgb(255, 255, 255);
 }
-
+h4{
+    font-size: 3.2rem;
+    color:var(--terciario);
+}
 h3{
     font-size: 2.6rem;
+    block-size: auto;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     text-align: center;
 }
 p{
-    color:var(--primario)
+    color:var(white)
 }
 
 fieldset{
@@ -51,7 +55,6 @@ fieldset{
 /*utilidades*/
 
 .contenedor{
-
     width: 75%;
     margin: 0 auto;
 }
@@ -63,10 +66,10 @@ fieldset{
 
 .boton{
     background-color: var(--secundario);
+    font-size: 2rem;
     color: white;
     padding: 1rem 3rem;
     margin-top: 1rem;
-    font-size: 2rem;
     text-decoration: none;
     text-transform:uppercase ;
     font-weight: 700;
@@ -84,7 +87,7 @@ fieldset{
 
 
 .titulo{
-    color: var(--secundario)
+    color: var(--secundario);
     font-size: 3.8rem;
     text-align: center;
 }
@@ -134,14 +137,13 @@ fieldset{
 
 .contenido-hero{
     background-color: rgba(0, 0, 0,0.6) ;
-    background-color: rgb(0, 0, 0 /60%) 
-    color: var(--primario);
+    background-color: rgb(0, 0, 0 /50%);
+    color: white;
     position: absolute;
-    top: 0px;
+    top : 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,6 +154,13 @@ fieldset{
 .Informacion{
     display: flex;
     justify-content: center;
+    font-weight: bolder;
+}
+
+.Aprender h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color:white;
 }
 
 .micontenido{
@@ -190,15 +199,16 @@ fieldset{
 .icono{
     height: 15rem;
     width: 15rem;
-    background-color: var(--primario);
+    background-color: rgb(196, 196, 196);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #8583e4;
 }
 
 .formulario{
-    background-color: grey;
+    background-color:var(--primario);
     width: min(60rem,85%);
     margin: 0 auto;
     padding: 2rem;
@@ -206,10 +216,10 @@ fieldset{
 }
 .formulario legend{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight:bold ;
-    margin-bottom: 2rem
-    color: red;
+    margin-bottom: 2rem;
+    color: var(--cuartario);
 }
 
 .campo{
@@ -221,6 +231,7 @@ fieldset{
     font-weight: bold;
     display: block;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .input-text{
@@ -233,4 +244,55 @@ fieldset{
 
 footer{
     text-align: center;
+}
+
+/*MENSAJES FORMULARIO*/
+.success{
+    background-color: rgb(169, 236, 169);
+    color: white;
+    align-items: center;
+}
+
+.error{
+    background-color: rgb(238, 133, 133);
+    color: white;
+}
+.mensaje{ 
+    width: 50%;
+    text-align: center;
+    border-radius: 1rem;
+    border: .3rem solid white;
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+/*ESTILOS PARA LISTA DE MENSAJES*/
+.cabecera{
+    padding-bottom: 1rem;
+}
+.campoCabecera{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0;
+    background-color: rgb(129, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(88, 88, 88);
+}
+.fila{
+    display: grid;
+    grid-template-columns: .5fr 2fr 1fr 2fr 3fr 1fr;
+}
+
+.campo{
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+
+.fila.impar{
+    background-color: rgb(179, 193, 199)
+}
+
+.fila.par{
+    background-color: rgb(219, 219, 219);
 }
